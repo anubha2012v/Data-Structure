@@ -100,8 +100,12 @@ int main()
     int A[] = {3, 5, 7, 10, 25, 8, 12, 2};
 
     create(A, 5);
-
-    // Display(first);
-    printf("Length is: %d ", Rcount(first));
+    
+    printf("Elements in a linked list are: ");
+    Display(first);
+    printf("\nLength is: %d \n", Rcount(first));
+    printf("Sum of a Linked List is: %d \n", Add(first));
+    printf("Max is: %d \n",RMax(first));
+    
     return 0;
 }
