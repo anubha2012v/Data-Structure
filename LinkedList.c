@@ -105,6 +105,20 @@ int Max(struct Node *p){
     return max;
 }
 
+//Maximum Element in a linked list("Recursive Approach"). 
+int RMax(struct Node *p){
+    int x = 0;
+
+    if(p == 0)
+        return -65535;
+    x = RMax(p->next);
+    if(x > p->data)
+        return x;
+    else
+        return p->data;
+}
+
+
 int main()
 {
     int A[] = {3, 5, 7, 10, 25, 8, 12, 2};
