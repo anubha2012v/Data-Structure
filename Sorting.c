@@ -145,6 +145,7 @@ void Merge(int A[], int l, int mid, int h)
     }
 }
 
+//Iterative method for Mergesort
 void IMergesort(int A[], int n)
 {
     int p, l, h, mid, i;
@@ -164,6 +165,7 @@ void IMergesort(int A[], int n)
     }
 }
 
+//Recursive Method for Mergesort
 void RMergesort(int A[], int l, int h){
     int mid;
     if(l < h){
