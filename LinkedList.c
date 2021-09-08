@@ -130,6 +130,16 @@ struct Node *Search(struct Node *p, int key)
     return NULL;
 }
 
+// Searching in Linked list Using Linear Search("Recursive Approach")
+struct Node *RSearch(struct Node *p, int key){
+    if(p == NULL)
+        return NULL;
+    if(key == p->data)
+        return p;
+    return RSearch(p->next, key);
+
+}
+
 int main()
 {
     int A[] = {3, 5, 7, 10, 25, 8, 12, 2};
