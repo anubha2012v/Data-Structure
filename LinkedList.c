@@ -123,7 +123,7 @@ int main()
 {
     int A[] = {3, 5, 7, 10, 25, 8, 12, 2};
 
-    create(A, 5);
+    create(A, 8);
     
     printf("Elements in a linked list are: ");
     Display(first);
