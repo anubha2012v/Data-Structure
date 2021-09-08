@@ -76,6 +76,16 @@ int Rcount(struct Node *p){
         return 0;
 }
 
+//Sum of all elements in a Linked List("Iterative Approach").
+int Add(struct Node *p){
+    int sum = 0;
+    while (p != NULL){
+        sum = sum + p->data;
+        p= p->next;
+    }
+    return sum;
+}
+
 int main()
 {
     int A[] = {3, 5, 7, 10, 15};
