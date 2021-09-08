@@ -94,6 +94,16 @@ int RAdd(struct Node *p){
         return 0;
 }
 
+//Maximum Element in a linked list("Iterative Approach"). 
+int Max(struct Node *p){
+    int max = -65535;
+    while (p != NULL){
+        if (p->data > max) 
+            max = p->data;
+        p = p->next;
+    }
+    return max;
+}
 
 int main()
 {
