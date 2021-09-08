@@ -114,6 +114,7 @@ void QuickSort(int A[], int l, int h)
     }
 }
 
+//Algorithm for Merge for Mergesort
 void Merge(int A[], int l, int mid, int h)
 {
     int i = l, j = mid + 1, k = l;
