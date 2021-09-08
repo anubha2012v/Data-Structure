@@ -86,6 +86,15 @@ int Add(struct Node *p){
     return sum;
 }
 
+//Sum of all elements in a Linked List("Recursive Approach").
+int RAdd(struct Node *p){
+    if(p != NULL)
+        return RAdd(p->next) + p->data;
+    else
+        return 0;
+}
+
+
 int main()
 {
     int A[] = {3, 5, 7, 10, 15};
