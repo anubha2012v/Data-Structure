@@ -140,6 +140,25 @@ struct Node *RSearch(struct Node *p, int key){
 
 }
 
+//In this searching Key Value is moved to front
+struct Node *LSearch(struct Node *p, int key)
+{
+    struct Node *q = NULL;
+
+    while (p != NULL)
+    {
+        if (key == p->data){
+            q->next = p->next;
+            p->next = first;
+            first = p;
+            return p;
+        }
+        q = p; 
+        p = p->next;
+    }
+    return NULL;
+}
+
 int main()
 {
     int A[] = {3, 5, 7, 10, 25, 8, 12, 2};
