@@ -97,7 +97,7 @@ int RAdd(struct Node *p){
 
 int main()
 {
-    int A[] = {3, 5, 7, 10, 15};
+    int A[] = {3, 5, 7, 10, 25, 8, 12, 2};
 
     create(A, 5);
 
