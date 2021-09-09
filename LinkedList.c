@@ -198,6 +198,38 @@ void InsertLast(int x)
     }
 }
 
+//Inserting Element in sorted order
+void SortedInsert(struct Node *p, int x)
+{
+    struct Node *t, *q = NULL;
+
+    t = (struct Node *)malloc(sizeof(struct Node));
+    t->data = x;
+    t->next = NULL;
+
+    if (first == NULL)
+        first = t;
+    else
+    {
+        while (p != NULL && p->data < x)
+        {
+            q = p;
+            p = p->next;
+        }
+        if (p == first)
+        {
+            t->next = first;
+            first = t;
+        }
+        else
+        {
+            t->next = q->next;
+            q->next = t;
+        }
+    }
+}
+
+
 int main()
 {
 //     int A[] = {3, 5, 7, 10, 25, 8, 12, 2};
