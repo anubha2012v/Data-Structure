@@ -180,5 +180,10 @@ int main()
 //         printf("No Key Found");
 //     Display(first);
     
+    Insert(first, 0, 10);
+    Insert(first, 1, 20);
+    Insert(first, 2, 30);
+    Insert(first, 0, 5);
+    
     return 0;
 }
