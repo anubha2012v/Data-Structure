@@ -165,20 +165,20 @@ int main()
 
 //     create(A, 8);
     
-    printf("Elements in a linked list are: ");
-    Display(first);
-    printf("\nLength is: %d \n", Rcount(first));
-    printf("Sum of a Linked List is: %d \n", Add(first));
-    printf("Max is: %d \n",RMax(first));
+//     printf("Elements in a linked list are: ");
+//     Display(first);
+//     printf("\nLength is: %d \n", Rcount(first));
+//     printf("Sum of a Linked List is: %d \n", Add(first));
+//     printf("Max is: %d \n",RMax(first));
     
-    temp = LSearch(first, 25);
-    temp = LSearch(first, 8);
+//     temp = LSearch(first, 25);
+//     temp = LSearch(first, 8);
     
-    if (temp != NULL)
-        printf("Key Found %d \n", temp->data);
-    else
-        printf("No Key Found");
-    Display(first);
+//     if (temp != NULL)
+//         printf("Key Found %d \n", temp->data);
+//     else
+//         printf("No Key Found");
+//     Display(first);
     
     return 0;
 }
