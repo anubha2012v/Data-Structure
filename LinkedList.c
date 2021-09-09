@@ -264,8 +264,15 @@ int main()
 //     InsertLast(18);
 //     Display(first);
     
-    SortedInsert(first,55);
-    SortedInsert(first,25);
+//     SortedInsert(first,55);
+//     SortedInsert(first,25);
+
+//     Display(first);
+    
+    int A[] = {10, 20, 30, 40, 50};
+    create(A, 5);
+
+    Delete(first,4);
 
     Display(first);
     return 0;
