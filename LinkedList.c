@@ -185,5 +185,12 @@ int main()
     Insert(first, 2, 30);
     Insert(first, 0, 5);
     
+    
+    InsertLast(10);
+    InsertLast(12);
+    InsertLast(14);
+    InsertLast(16);
+    InsertLast(18);
+    Display(first);
     return 0;
 }
