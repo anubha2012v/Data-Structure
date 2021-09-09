@@ -232,5 +232,9 @@ int main()
 //     InsertLast(18);
 //     Display(first);
     
+    SortedInsert(first,55);
+    SortedInsert(first,25);
+
+    Display(first);
     return 0;
 }
