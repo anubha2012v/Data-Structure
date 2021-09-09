@@ -161,12 +161,12 @@ struct Node *LSearch(struct Node *p, int key)
 
 int main()
 {
-    int A[] = {3, 5, 7, 10, 25, 8, 12, 2};
+//     int A[] = {3, 5, 7, 10, 25, 8, 12, 2};
 
-    create(A, 8);
+//     create(A, 8);
     
     printf("Elements in a linked list are: ");
-//     Display(first);
+    Display(first);
     printf("\nLength is: %d \n", Rcount(first));
     printf("Sum of a Linked List is: %d \n", Add(first));
     printf("Max is: %d \n",RMax(first));
