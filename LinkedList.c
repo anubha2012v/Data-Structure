@@ -183,6 +183,20 @@ void Insert(struct Node *p, int index, int x)
     }
 }
 
+// Inserting at last(Specially if you want to insert new element at last)
+void InsertLast(int x)
+{
+    struct Node *t = (struct Node *)malloc(sizeof(struct Node));
+    t->data = x;
+    t->next = NULL;
+    if (first == NULL)
+        first = last = t;
+    else
+    {
+        last->next = t;
+        last = t;
+    }
+}
 
 int main()
 {
