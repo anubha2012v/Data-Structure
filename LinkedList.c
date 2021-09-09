@@ -159,6 +159,31 @@ struct Node *LSearch(struct Node *p, int key)
     return NULL;
 }
 
+//Inserting in a Linked List
+void Insert(struct Node *p, int index, int x)
+{
+    int i;
+    struct Node *t;
+    if (index < 0 || index > count(p))
+        return;
+    t = (struct Node *)malloc(sizeof(struct Node));
+    t->data = x;
+
+    if (index == 0)
+    {
+        t->next = first;
+        first = t;
+    }
+    else
+    {
+        for (i = 0; i < index - 1; i++)
+            p = p->next;
+        t->next = p->next;
+        p->next = t;
+    }
+}
+
+
 int main()
 {
 //     int A[] = {3, 5, 7, 10, 25, 8, 12, 2};
