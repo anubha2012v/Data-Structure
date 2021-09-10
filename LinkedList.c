@@ -273,7 +273,6 @@ int isSorted(struct Node *p)
     return 1;
 }
 
-
 //Removing Duplicate Elements from Linked List.
 void RemoveDuplicate(struct Node *p){
     struct Node *q = p->next;
