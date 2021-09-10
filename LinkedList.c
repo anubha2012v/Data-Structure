@@ -258,7 +258,20 @@ int Delete(struct Node *p, int index)
     }
 }
 
+//To check if the Element of a linked list is sorted or not.
+int isSorted(struct Node *p)
+{
+    int x = -65535;
 
+    while (p != NULL)
+    {
+        if (p->data < x)
+            return 0;
+        x = p->data;
+        p = p->next;
+    }
+    return 1;
+}
 
 int main()
 {
