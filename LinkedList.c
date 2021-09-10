@@ -318,5 +318,19 @@ int main()
 //     Delete(first,4);
 
 //     Display(first);
+    
+ 
+int A[] = {10, 2, 30, 40, 50};
+    create(A, 5);
+
+    if (isSorted(first))
+    {
+        printf("Sorted.\n");
+    }
+    else
+    {
+        printf("Not Sorted.\n");
+    }
+
     return 0;
 }
