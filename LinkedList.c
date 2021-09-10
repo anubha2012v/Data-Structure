@@ -349,6 +349,9 @@ int main()
 //         printf("Not Sorted.\n");
 //     }
 
+    int A[] = {10, 20, 20, 30, 30, 40, 50};
+    create(A, 7);
+    
     
     
     return 0;
