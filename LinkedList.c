@@ -286,7 +286,8 @@ void RemoveDuplicate(struct Node *p){
             q = p->next;
         }
     }
-}
+} 
+
 int main()
 {
 //     int A[] = {3, 5, 7, 10, 25, 8, 12, 2};
