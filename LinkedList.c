@@ -353,7 +353,8 @@ int main()
     create(A, 7);
     
     RemoveDuplicate(first);
-    
+    Display(first);
+
     
     
     return 0;
