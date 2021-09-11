@@ -403,11 +403,11 @@ int main()
 //     RemoveDuplicate(first);
 //     Display(first);
 
-    int A[] = {10, 20, 30, 40, 50};
-    create(A, 5);
+//     int A[] = {10, 20, 30, 40, 50};
+//     create(A, 5);
     
-    Reverse3(NULL,first);
-    Display(first);
+//     Reverse3(NULL,first);
+//     Display(first);
 
     
     return 0;
