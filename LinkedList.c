@@ -324,6 +324,20 @@ void Reverse2(struct Node *p)
     first = q;
 }
 
+//Reversing the linked list (#Recursively)
+void Reverse3(struct Node *q, struct Node *p)
+{
+    if (p != NULL)
+    {
+        Reverse3(p, p->next);
+        p->next = q;
+    }
+    else
+    {
+        first = q;
+    }
+}
+
 int main()
 {
 //     int A[] = {3, 5, 7, 10, 25, 8, 12, 2};
