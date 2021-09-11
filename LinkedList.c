@@ -357,5 +357,7 @@ int main()
     int A[] = {10, 20, 30, 40, 50};
     create(A, 5);
     
+    Reverse3(NULL,first);
+    
     return 0;
 }
