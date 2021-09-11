@@ -440,14 +440,14 @@ int main()
 //     Reverse3(NULL,first);
 //     Display(first);
 
-    int A[] = {50,40,10,30,20};
-    int B[] = {1,2,3,4,5};
+//     int A[] = {50,40,10,30,20};
+//     int B[] = {1,2,3,4,5};
 
-    create(A, 5);
-    create2(B,5);
+//     create(A, 5);
+//     create2(B,5);
 
-    Concat(first, second);
-    Display(third);
+//     Concat(first, second);
+//     Display(third);
     
     return 0;
 }
