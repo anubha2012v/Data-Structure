@@ -5,7 +5,7 @@ struct Node
 {
     int data;
     struct Node *next;
-} *first = NULL;
+} *first = NULL, *last, *second = NULL, *third = NULL;
 
 //Method for Displaying Linked List
 void Display(struct Node *p)
