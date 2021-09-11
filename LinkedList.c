@@ -309,6 +309,20 @@ void Reverse1(struct Node *p){
     }
 }
 
+//Reversing the linked list by Using Sliding(3 pointers) pointers.
+void Reverse2(struct Node *p)
+{
+    struct Node *q = NULL, *r = NULL;
+
+    while (p != NULL)
+    {
+        r = q;
+        q = p;
+        p = p->next;
+        q->next = r;
+    }
+    first = q;
+}
 
 int main()
 {
