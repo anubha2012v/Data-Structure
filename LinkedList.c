@@ -359,6 +359,16 @@ void Reverse3(struct Node *q, struct Node *p)
     }
 }
 
+//Concating two linked lists
+void Concat(struct Node *p, struct Node *q){
+    third = p;
+
+    while(p->next != NULL)
+        p = p->next;
+    p->next = q;
+}
+
+
 int main()
 {
 //     int A[] = {3, 5, 7, 10, 25, 8, 12, 2};
