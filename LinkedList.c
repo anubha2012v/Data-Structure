@@ -358,6 +358,8 @@ int main()
     create(A, 5);
     
     Reverse3(NULL,first);
+    Display(first);
+
     
     return 0;
 }
