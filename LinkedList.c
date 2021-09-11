@@ -57,6 +57,27 @@ void create(int A[], int n)
     }
 }
 
+//Method for creating another linked list
+void create2(int A[], int n)
+{
+    int i;
+    struct Node *t, *last;
+    second = (struct Node *)malloc(sizeof(struct Node));
+    second->data = A[0];
+    second->next = NULL;
+    last = second;
+
+    for (i = 1; i < n; i++)
+    {
+        t = (struct Node *)malloc(sizeof(struct Node));
+        t->data = A[i];
+        t->next = NULL;
+        last->next = t;
+        last = t;
+    }
+}
+
+
 //Counting nodes in a Linked List("Iterative Approach").
 int count(struct Node *p){
     int c = 0;
