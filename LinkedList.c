@@ -77,7 +77,6 @@ void create2(int A[], int n)
     }
 }
 
-
 //Counting nodes in a Linked List("Iterative Approach").
 int count(struct Node *p){
     int c = 0;
