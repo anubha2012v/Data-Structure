@@ -48,6 +48,20 @@ void RDisplay(struct Node *h){
     flag = 0;
 }
 
+//Length of the circular linked list
+int Length(struct Node *p)
+{
+    int len = 0;
+    do
+    {
+        len++;
+        p = p->next;
+    } while (p != head);
+
+    return len;
+}
+
+
 
 int main()
 {
