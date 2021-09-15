@@ -367,7 +367,7 @@ void Concat(struct Node *p, struct Node *q){
     p->next = q;
 }
 
-//Merge Two Linked Lists
+//Merge Two Linked Lists.
 void Merge(struct Node *p, struct Node *q)
 {
     struct Node *last;
