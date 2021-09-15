@@ -104,7 +104,9 @@ int main()
 
     int A[] = {2, 3, 4, 5, 6};
     create(A, 5);
-
+    
+    Insert(head,1,10);
+    
     Display(head);
     return 0;
 }
