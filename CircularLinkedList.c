@@ -98,6 +98,41 @@ void Insert(struct Node *p, int index, int x)
     }
 }
 
+//Deleting elements from the circular linked list
+int Delete(struct Node *p, int index)
+{
+    struct Node *q;
+    int i, x;
+    if (index < 0 || index > Length(head))
+        return -1;
+    if (index == 1)
+    {
+        while (p->next != head)
+            p = p->next;
+        x = head->data;
+        if (head == p)
+        {
+            free(head);
+            head = NULL;
+        }
+        else
+        {
+            p->next = head->next;
+            free(head);
+            head = p->next;
+        }
+    }
+    else
+    {
+        for (i = 0; i < index - 2; i++)
+            p = p->next;
+        q = p->next;
+        p->next = q->next;
+        x = q->data;
+        free(q);
+    }
+    return x;
+}
 
 int main()
 {
