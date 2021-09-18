@@ -134,7 +134,7 @@ int Delete(struct Node *p, int index)
     return x;
 }
 
-
+//Reversing the Doubly Linked List.
 void Reverse(struct Node *p){
     struct Node *temp = p;
 
