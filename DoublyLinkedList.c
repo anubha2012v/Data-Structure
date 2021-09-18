@@ -64,11 +64,13 @@ int main(){
     int A[] = {10,20,30,40,50};
     
     Create(A, 5);
+    
+    Reverse(first);
 
     Display(first);
     printf("\n");
 
-    printf("%d ",Length(first));
+//     printf("%d ",Length(first));
 
     return 0;
 }
