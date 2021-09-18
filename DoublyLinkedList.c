@@ -35,6 +35,15 @@ void Create(int A[], int n){
     }
 }
 
+//Fuunction for finding the length of A Doubly LL.
+int Length(struct Node *p){
+    int len = 0;
+    while(p != NULL){
+        len++;
+        p = p->next;
+    }
+    return len;
+}
 
 int main(){
     
