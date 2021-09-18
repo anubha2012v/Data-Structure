@@ -142,7 +142,7 @@ int main()
     create(A, 5);
     
 //     Insert(head,1,10);
-    Delete(head,8);
+//     Delete(head,8);
     
     Display(head);
     return 0;
