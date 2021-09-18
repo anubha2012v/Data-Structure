@@ -135,6 +135,19 @@ int Delete(struct Node *p, int index)
 }
 
 
+void Reverse(struct Node *p){
+    struct Node *temp = p;
+
+    while(p != NULL){
+        temp = p->next;
+        p->next = p->prev;
+        p->prev = temp;
+        p = p->prev;
+        if(p!=NULL && p->next == NULL)
+            first = p;  
+    }
+}
+
 int main()
 {
 
