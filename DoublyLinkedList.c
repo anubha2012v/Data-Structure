@@ -49,7 +49,12 @@ int main(){
     
     int A[] = {10,20,30,40,50};
     
-    
+    Create(A, 5);
+
+    Display(first);
+    printf("\n");
+
+    printf("%d ",Length(first));
 
     return 0;
 }
