@@ -8,7 +8,6 @@ struct Node{
 } *first = NULL;
 
 //Display function for displaying elements of a Doubly LinkedList.
-
 void Display(struct Node *p){
     while(p != NULL){
         printf("%d ", p->data);
