@@ -45,6 +45,20 @@ int Length(struct Node *p){
     return len;
 }
 
+//Reversing the Doubly Linked List.
+void Reverse(struct Node *p){
+    struct Node *temp = p;
+
+    while(p != NULL){
+        temp = p->next;
+        p->next = p->prev;
+        p->prev = temp;
+        p = p->prev;
+        if(p!=NULL && p->next == NULL)
+            first = p;  
+    }
+}
+
 int main(){
     
     int A[] = {10,20,30,40,50};
