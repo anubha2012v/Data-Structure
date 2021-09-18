@@ -7,6 +7,7 @@ struct Node{
     struct Node *next;
 } *first = NULL;
 
+
 void Display(struct Node *p){
     while(p != NULL){
         printf("%d ", p->data);
