@@ -16,6 +16,7 @@ void Display(struct Node *p){
     printf("\n")
 }
 
+
 int main(){
     int A[] = {10,20,30,40,50};
 
