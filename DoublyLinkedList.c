@@ -18,6 +18,7 @@ void Display(struct Node *p){
 
 
 int main(){
+    
     int A[] = {10,20,30,40,50};
 
 
