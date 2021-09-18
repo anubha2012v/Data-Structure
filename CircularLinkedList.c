@@ -142,7 +142,6 @@ int main()
     
 //     Insert(head,1,10);
 //     Delete(head,8);
-    Reverse(first);
     
     Display(head);
     return 0;
