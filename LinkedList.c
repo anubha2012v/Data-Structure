@@ -406,6 +406,23 @@ void Merge(struct Node *p, struct Node *q)
         last->next = q;
 }
 
+//Finding Middle Element in a Linked List
+void Middle(struct Node *p){
+    int length = 0;
+    struct Node* q = first;
+    while (p != NULL){
+        length++;
+        p = p->next;
+    }
+
+    //Here we are taking (Ceil function) don't forget to include (#include <math.h>)
+    int index = (int)ceil(length/2.0);
+    for (int i=0; i<index-1; i++){
+        q = q->next;
+    }
+    printf("Middle Element (Method-I):  %d", q->data);
+}
+
 
 int main()
 {
@@ -494,6 +511,8 @@ int main()
 
 //     Merge(first, second);
 //     Display(third);
+    
+    
     
     return 0;
 }
