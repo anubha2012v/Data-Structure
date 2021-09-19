@@ -487,13 +487,13 @@ int main()
 //     Concat(first, second);
 //     Display(third);
     
-    int A[] = {10,20,30,40,50};
-    int B[] = {5,15,25,35,45};
-    create(A, 5);
-    create2(B,5);
+//     int A[] = {10,20,30,40,50};
+//     int B[] = {5,15,25,35,45};
+//     create(A, 5);
+//     create2(B,5);
 
-    Merge(first, second);
-    Display(third);
+//     Merge(first, second);
+//     Display(third);
     
     return 0;
 }
