@@ -423,6 +423,20 @@ void Middle(struct Node *p){
     printf("Middle Element (Method-I):  %d", q->data);
 }
 
+//Another Method for finding the middle element of a Linked List
+void Middle1(struct Node* p){
+    struct Node* q = p;
+    while (q != NULL){
+        q = q->next;
+        if (q){
+            q = q->next;
+        }
+        if (q){
+            p = p->next;
+        }
+    }
+    printf("Middle Element (Method-II):  %d", p->data);  
+}
 
 int main()
 {
