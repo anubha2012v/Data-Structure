@@ -438,6 +438,7 @@ void Middle1(struct Node* p){
     printf("Middle Element (Method-II):  %d", p->data);  
 }
 
+
 int main()
 {
 //     int A[] = {3, 5, 7, 10, 25, 8, 12, 2};
