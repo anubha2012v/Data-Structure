@@ -526,7 +526,9 @@ int main()
 //     Merge(first, second);
 //     Display(third);
     
-    
+    Middle(first);
+    printf("\n");
+    Middle1(first);
     
     return 0;
 }
