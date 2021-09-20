@@ -67,7 +67,15 @@ int isEmpty()
     return top ? 0 : 1;
 }
 
-
+//Checking whether the stack is full
+int isFull()
+{
+    struct Node *t;
+    t = (struct Node *)malloc(sizeof(struct Node));
+    int r = t ? 0 : 1;
+    free(t);
+    return r;
+}
 
 int main()
 {
