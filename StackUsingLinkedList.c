@@ -20,6 +20,22 @@ void Display()
     printf("\n");
 }
 
+//Push Operation for Stack
+void push(int x)
+{
+    struct Node *t;
+    t = (struct Node *)malloc(sizeof(struct Node));
+
+    if (t == NULL)
+        printf("Stack is full!\n");
+    else
+    {
+        t->data = x;
+        t->next = top;
+        top = t;
+    }
+}
+
 
 
 int main()
