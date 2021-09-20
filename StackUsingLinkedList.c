@@ -53,6 +53,18 @@ int pop()
     return x;
 }
 
+//find the element at given position
+int peek(int pos){
+    int i;
+    struct Node *p = top;
+    for(i = 0; p!=NULL && i< pos-1; i++)
+        p = p->next;
+    if(p != NULL)
+        return p->data;
+    else
+        return -1;
+}
+
 //Finding top element of stack
 int stackTop()
 {
@@ -86,6 +98,6 @@ int main()
 
     Display();
 
-    printf("%d ", isFull());
+    printf("%d ", peek(4));
     return 0;
 }
