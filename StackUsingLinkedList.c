@@ -36,6 +36,23 @@ void push(int x)
     }
 }
 
+//Pop operation for Stack
+int pop()
+{
+    struct Node *t;
+    int x = -1;
+    if (top == NULL)
+        printf("Stack is Empty!\n");
+    else
+    {
+        t = top;
+        top = top->next;
+        x = t->data;
+        free(t);
+    }
+    return x;
+}
+
 
 
 int main()
