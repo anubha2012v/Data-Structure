@@ -61,6 +61,13 @@ int stackTop()
     return -1;
 }
 
+//Checking whether the stack is empty
+int isEmpty()
+{
+    return top ? 0 : 1;
+}
+
+
 
 int main()
 {
