@@ -7,6 +7,19 @@ struct Node
     struct Node *next;
 } *top = NULL;
 
+//Display function
+void Display()
+{
+    struct Node *p;
+    p = top;
+    while (p != NULL)
+    {
+        printf("%d ", p->data);
+        p = p->next;
+    }
+    printf("\n");
+}
+
 
 
 int main()
