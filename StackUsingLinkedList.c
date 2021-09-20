@@ -53,6 +53,13 @@ int pop()
     return x;
 }
 
+//Finding top element of stack
+int stackTop()
+{
+    if (top != NULL)
+        return top->data;
+    return -1;
+}
 
 
 int main()
