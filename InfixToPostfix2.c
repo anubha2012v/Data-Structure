@@ -95,7 +95,8 @@ char * IntoPostfix(char *infix){
             postfix[j++] = infix[i++];
         else
         {
-            if (out_precedence(infix[i]) > in_precedence(stackTop()))
+            //As if stack is empty in_precedence of -1 (stacktop()) will give random result it is better to handle it
+            if (isEmpty() || out_precedence(infix[i]) > in_precedence(stackTop()))
                 push(infix[i++]);
             else if (in_precedence(stackTop()) > out_precedence(infix[i]))
                 postfix[j++] = pop();
