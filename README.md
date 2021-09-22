@@ -4,3 +4,4 @@
   <h2>2.Searching Techniques</h2>
   <h2>3.Sorting</h2>
   <h2>4.Stack</h2>
+  <h2>5.Queue</h2>
