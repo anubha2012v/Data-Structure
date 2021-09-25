@@ -3,7 +3,8 @@
 
 int main(){
     char A[] = "Anubhav";
-    char B[7];
+    
+    char B[7];// Another char Array for storing reverse character
     int i,j;
 
     for(i=0; A[i] != '\0'; i++){}
