@@ -4,7 +4,7 @@
 int main()
 {
     char A[] = "Anubhav";
-    char t;
+    char t; //temp character
     int i, j;
 
     for (j = 0; A[j] != '\0'; j++)
